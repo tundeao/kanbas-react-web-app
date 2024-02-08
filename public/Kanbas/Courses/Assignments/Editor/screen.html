@@ -1,46 +1,62 @@
 <html>
-    <head>
-        <title>Grades</title>
-    </head>
-    <body>
-        <table>
-            <tbody>
-              <tr>
-                <td valign="top">
-                    <ul>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                        <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-                        <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                        <li><a href="/Kanbas/Account/Navigation/index.html">History</a></li>
-                        <li><a href="/Kanbas/Dashboard/screen.html">Studio</a></li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">Commons</a></li>
-                        <li><a href="/Kanbas/Calendar/index.html">Help</a></li>
-                    </ul> 
+
+<head>
+    <title>Grades</title>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css" rel="stylesheet" />
+</head>
+
+<body>
+    <table>
+        <tbody class="view-table nav-tbody">
+            <tr>
+                <td valign="top" class="nav-td">
+                    <ul class="wd-kanbas-navigation">
+                        <li><a href="http://northeastern.edu">N</a></li>
+                        <li><a href="/Kanbas/Account/Navigation/index.html"><i class="fa fa-user"
+                                    id="avi"></i>Account</a></li>
+                        <li>
+                            <a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i>Dashboard</a>
+                        </li>
+                        <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a>
+                        </li>
+                        <li><a href="/Kanbas/Calendar/index.html"><i class="fa fa-calendar"></i>Calendar</a>
+                        </li>
+                        <li><a href="/Kanbas/Inbox/index.html"><i class="fa fa-solid fa-inbox"></i><br>Inbox</a></li>
+                        <li><a href="/Kanbas/Account/Navigation/index.html"><i class="fa fa-clock"></i><br>History</a>
+                        </li>
+                        <li><a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-solid fa-sitemap"></i><br>
+                                Studio</a>
+                        </li>
+                        <li><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-solid fa-c"></i>Commons</a>
+                        </li>
+                        <li><a href="/Kanbas/Calendar/index.html"><i
+                                    class="fa fa-regular fa-circle-question"></i><br>Help</a>
+                        </li>
+                    </ul>
                 </td>
                 <td valign="top">
-                    <ul>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <ul class="wd-navigation">
+                        <li>
+                          <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                        </li>
+                        <li>
+                          <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                        </li>
+                        <li><a href="http://piazza.com">Piazza</a></li>
+                        <li><a href="#">Zoom</a></li>
+                        <li class="wd-active">
+                          <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                        </li>
                         <li><a href="#">Quizzes</a></li>
                         <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
                         <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="#">Settings</a></li>
-                    </ul>
+                      </ul>
                 </td>
-                <td>
+                <td valign="top">
                     <h2>Assignment Name</h2>
                     <input type="text" name="wd-assignment-name" value="Assignment 1"><br />
                     <label>Assignment Description</label><br>
@@ -48,7 +64,7 @@
                         This is the first assignment for Web Dev.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget imperdiet urna. Quisque tortor orci, ultricies commodo magna ut, sollicitudin ultricies massa. Duis vitae est velit. Mauris vel nunc et nisl viverra maximus.
                     </textarea><br />
-                    
+
                     <table>
                         <tbody>
                             <tr>
@@ -76,8 +92,8 @@
                                         <option value="">#</option>
                                     </select>
                                 </td> <br />
-                    
-                    
+
+
                             </tr>
                             <tr>
                                 <td colspan="2"><input type="checkbox" value="" name="" id="" />
@@ -121,15 +137,16 @@
                                 <td><input type="date" value="2024-01-01" /><br /></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><button type="button">Cancel</button><button type="button">Save</button></td>
+                                <td colspan="2"><a href="/Kanbas/Courses/Assignments/screen.html"><button
+                                            type="button">Cancel</button><button type="button">Save</button></a></td>
                             </tr>
-                    
+
                         </tbody>
                     </table>
-    </td>
-    </tr>
-    </tbody>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </body>
-                
+
 </html>

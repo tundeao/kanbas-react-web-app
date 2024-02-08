@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-tbody {
+  display: block;
+  height: 100%;
+}
+
+.nav-td {
+  padding: 0px;
+  border: px solid #ddd; /* Add border for demonstration */
+}
+
+.view-table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
