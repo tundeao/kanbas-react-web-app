@@ -1,8 +1,13 @@
 .wd-kanbas-navigation {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
     background-color: black;
     list-style: none;
     padding: 0px;  margin: 0px;
     width: 80px;
+    height: 100vh;
   }
   .wd-kanbas-navigation li {
     padding: 10px;     margin-bottom: 10px;
@@ -29,4 +34,5 @@
   .icon-color {
     color: red
   }
+
   

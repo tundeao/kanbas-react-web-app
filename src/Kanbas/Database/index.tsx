@@ -1,4 +1,5 @@
 import courses from "./courses.json";
 import modules from "./modules.json";
 import assignments from "./assignments.json";
-export {  courses, modules, assignments  };
+const links = ["Home", "Modules", "Grades", "Assignments"];
+export { courses, modules, assignments, links };
