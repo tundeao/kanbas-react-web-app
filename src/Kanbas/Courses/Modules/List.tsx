@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import "../../../style.css";
+// import "../../../style.css";
 import db from "../../Database";
 import {
 	FaEllipsisV,
