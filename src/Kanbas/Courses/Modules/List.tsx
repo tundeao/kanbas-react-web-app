@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 // import "../../../style.css";
 import db from "../../Database";
+import { KanbasState } from "../../store";
+import * as client from "./client";
+
 import {
 	FaEllipsisV,
 	FaCheckCircle,
@@ -16,16 +19,13 @@ import {
 	updateModule,
 	setModule,
 	setModules,
-} from "./reducer";
-import { KanbasState } from "../../store";
-import * as client from "./client";
-
+} from "./reducer"; 
 function ModuleList() {
 	const { courseId } = useParams();
 	useEffect(() => {
 		client
 			.findModulesForCourse(courseId)
-			.then((modules) => dispatch(setModules(modules)));
+			.then((modules: any) => dispatch(setModules(modules)));
 	}, [courseId]);
 
 	const moduleList = useSelector(
