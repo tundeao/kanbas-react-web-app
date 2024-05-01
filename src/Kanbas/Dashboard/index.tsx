@@ -9,7 +9,7 @@ function Dashboard( { courses, course, setCourse, addNewCourse, deleteCourse, up
   courses: any[]; course: any; setCourse: (course: any) => void;
   addNewCourse: () => void; deleteCourse: (course: any) => void;
   updateCourse: () => void; }) {
-
+console.log(process.env.REACT_APP_BASE_API_URL);
   
   return (
     <div className="p-4">
